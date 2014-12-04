@@ -1,6 +1,6 @@
-(ns example.demons
+(ns clj-fl-examples.demons
   (:require [clj-fl.core :refer :all]
-            [example.renderlib :refer :all])
+            [clj-fl-examples.renderlib :refer :all])
   (import [java.awt Color]
           [javax.imageio ImageIO]
           [javax.swing JPanel JFrame]))
@@ -63,9 +63,6 @@
   (- (* (first uno) (second due))
      (* (second uno) (first due))))
 
-(defn crunch1
-  [uno due]
-  (+ (first uno) (first due)))
 
 (defn polygonarea
   "Calculate the area of the polygon poly"

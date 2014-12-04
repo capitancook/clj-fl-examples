@@ -1,7 +1,7 @@
-(ns example.core
+(ns clj-fl-examples.core
   (:require  [clj-fl.core :refer :all]
-             [example.renderlib :refer :all]
-             [example.demons :refer :all]
+             [clj-fl-examples.renderlib :refer :all]
+             [clj-fl-examples.demons :refer :all]
              [vijual :as v]))
 
 

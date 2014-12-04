@@ -1,7 +1,7 @@
 ;; Minimal graphics library to play with clj-fl
 
 
-(ns example.renderlib
+(ns clj-fl-examples.renderlib
   (:require [clj-fl.core :refer :all])
   (import [java.awt Color]
           [javax.imageio ImageIO]
