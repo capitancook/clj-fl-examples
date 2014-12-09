@@ -2,11 +2,6 @@
 
  ;-------------------------------------------Knowledge Base start--------------------------------------------------
 
- ; see: Knowledge-based System to Support Architectural Design Intelligent objects, project net-constraints, collaborative work
- ; CARRARA, Gianfranco; FIORAVANTI, Antonio; NOVEMBRI, Gabriele
- ; in Education and research in Computer Aided Architectural Design in Europe
- ; 19 th ECAADE-conference Helsinki, Finland - August 2001
- ;------ AKO frames
 
  {:frame       {:value "bu"}
   :name        {:value "Building Unit"}
@@ -49,14 +44,14 @@
 
  {:frame       {:value "sw"}
   :name        {:value "Structural Wall"}
-  :description {:value "A structural wall is schematized as a line thicker than a partition wall"}
+  :description {:value "A structural wall is schematized as a blue line segment thicker than a partition wall"}
   :ako         {:value "be"}
   :width       {:value 10}
   :color       {:value (0 0 255)}}
 
  {:frame       {:value "pw"}
   :name        {:value "Partition Wall"}
-  :description {:value "A partition wall is schematized as a line thinner than a structural wall"}
+  :description {:value "A partition wall is schematized as a light blue line segment thinner than a structural wall"}
   :ako         {:value "be"}
   :width       {:value 5}
   :color       {:value (100 100 255)}}
@@ -150,7 +145,7 @@
   :sps         {:value ((6 0) (12 0))}
   :isi         {:value ("bedroom1" "bathroom1")}}
 
-;; Service frames
+ ;; Service frames
 
  {:frame       {:value "renderfilter"}
   :showarea    {:value true}

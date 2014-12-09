@@ -99,7 +99,6 @@
 
 (defn cleargraphics []
   "Clears the Graphics2D context"
-  (println "pippo")
   (setlinecolor '(255 255 255))
   (.clearRect @gfx 0 0 (:wx @t) (:wy @t)))
 

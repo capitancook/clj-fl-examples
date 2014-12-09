@@ -6,5 +6,4 @@
                  [clj-fl "0.1.0-prealfa9"]
                  [lein-light-nrepl "0.0.18"]
                  [adamclements/vijual "0.3.0-SNAPSHOT"]]
-  :main example.core
   :repl-options {:nrepl-middleware [lighttable.nrepl.handler/lighttable-ops]})

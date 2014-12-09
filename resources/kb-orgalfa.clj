@@ -15,10 +15,12 @@
 
  {:frame {:value "person"}
   :description {:value "A human being"}
+  :showisis {:proc showisis}
   :showcofs {:proc showcofs}}
 
  {:frame {:value "structure"}
   :description {:value "A social structure of human beings aimed at reaching some target"}
+  :showisis {:proc showisis}
   :showcofs {:proc showcofs}
   :delete {:proc delstruct}}
 
@@ -180,37 +182,44 @@
   {:frame {:value  "D1"}
    :name {:value "Department 1"}
    :cof {:value ("U1" "U2")}
+   :isi {:value "DGA"}
    :isa {:value "department"}
    :status {:value "active"}}
   {:frame {:value "D2"}
    :name {:value "Department 2"}
    :cof {:value ("U3")}
+   :isi {:value "DGA"}
    :isa {:value "department"}
    :status {:value "active"}}
   {:frame {:value "D3"}
    :name {:value "Department 3"}
    :cof {:value ("U4")}
+   :isi {:value "DGB"}
    :isa {:value "department"}
    :status {:value "active"}}
 
   {:frame {:value "U1"}
    :name {:value "Unit 1"}
    :cof {:value ("E1" "E2" "E3" "E4")}
+   :isi {:value "D1"}
    :isa {:value "unit"}
    :status {:value "active"}}
   {:frame {:value "U2"}
    :name {:value "Unit 2"}
    :cof {:value ("E5" "E6" "E7")}
+   :isi {:value "D1"}
    :isa {:value "unit"}
    :status {:value "active"}}
   {:frame {:value "U3"}
    :name {:value "Unit 3"}
    :cof {:value ("E8" "E9" "E10" "E11" "E12")}
+   :isi {:value "D2"}
    :isa {:value "unit"}
    :status {:value "active"}}
   {:frame {:value "U4"}
    :name {:value "Unit 4"}
    :cof {:value ("E13" "E14" "E15")}
+   :isi {:value "D3"}
    :isa {:value "unit"}
    :status {:value "active"}}
 
@@ -223,8 +232,8 @@
    :name {:value "Paolo"}
    :address {:value {:street "Via del Sudario, 8" :city "Rome" :postalcode 00100}}
    :isi {:value "U1"}
-   :isa {:value "male"}
-   ;  :isa {:value ("male" "Unit-head")}
+;;    :isa {:value ("male" "Unit-head")}
+   :isa {:value ("male")}
    :status {:value "active"}
    :level {:value "AD8"}}
   {:frame {:value "E2"}
@@ -234,7 +243,7 @@
    :name {:value "John"}
    :address {:value {:street "Brown street, 345" :city "London" :postalcode 00330}}
    :isi {:value "U1"}
-   :isa {:value ("male" "secretary")}
+   :isa {:value ("male" "Secretary")}
    :status {:value "active"}
    :level {:value "AST-SC2"}}
   {:frame {:value "E3"}
