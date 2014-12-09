@@ -4,6 +4,7 @@
              [clj-fl-examples.demons :refer :all]
              [vijual :as v]))
 
+
 (defn showkbcad
   []
   (load-kb-vec "resources\\kb-kbcad.clj")

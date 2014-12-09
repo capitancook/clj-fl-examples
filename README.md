@@ -10,12 +10,27 @@ lein repl
 
 then, at the repl prompt, type
 
+```clojure
+(ns clj-fl-examples
+  (:require  [clj-fl.core :refer :all]
+             [clj-fl-examples.core :refer :all]
+             [clj-fl-examples.renderlib :refer :all]
+             [clj-fl-examples.demons :refer :all]
+             [vijual :as v]))
+```
+and
+
+```clojure
 (showorgalfa)
+```
 
 to load the OrgAlfa use case, where the frame language is used to model a simple knowledge based ERP.
 Or you can type, at the repl prompt:
 
+```clojure
+
 (showkbcad)
+```
 
 to load the kbcad use case, a simple knowledge based Computer Aided Design system.
 
