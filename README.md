@@ -4,11 +4,22 @@ Two simple use cases for the clj-fl Frame Language library.
 
 ## Usage
 
-Start a REPL with
+i) Download the repository
+
+```bash
+git clone https://github.com/capitancook/clj-fl-examples.git <your-dir>
+```
+
+
+ii) Start a REPL:
+
+```bash
+cd <your-dir>
 
 lein repl
+```
 
-then, at the repl prompt, type
+iii) At the repl prompt, type
 
 ```clojure
 (ns clj-fl-examples
@@ -18,26 +29,26 @@ then, at the repl prompt, type
              [clj-fl-examples.demons :refer :all]
              [vijual :as v]))
 ```
-and
+iv) It's time to play now!
 
-```clojure
-(showorgalfa)
-```
 
-to load the OrgAlfa use case, where the frame language is used to model a simple knowledge based ERP.
-Or you can type, at the repl prompt:
+### Knowledge Based Computer Aided Design (KBCAD) example
 
-```clojure
+Please, read the following posts to have more information about this use case:
 
-(showkbcad)
-```
+[Frame language: the knowledge based computer aided design (KBCAD) example (part 1)](http://highorderdysfunctions.blogspot.com/2014/12/frame-language-knowledge-based-computer.html)
 
-to load the kbcad use case, a simple knowledge based Computer Aided Design system.
+[Frame language: the knowledge based computer aided design (KBCAD) example (part 2)](http://highorderdysfunctions.blogspot.com/2014/12/frame-language-knowledge-based-computer_9.html)
 
-After each of the previous command/function you can play around with the KB you loaded.
+### Knowledge Based Human Resource Management  (KBHRM) example
+
+TBD
+
+## Todo
+
+Add more functionalities to both KBCAD and KBHRM
 
 ## License
-
 Copyright © 2014 Luciano Capitanio
 
 Distributed under the Eclipse Public License either version 1.0 or (at

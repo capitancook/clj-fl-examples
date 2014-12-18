@@ -6,8 +6,8 @@
 
 
 (defn showkbcad
-  []
-  (load-kb-vec "resources\\kb-kbcad.clj")
+  [f]
+  (load-kb-vec f)
   (println "***************************************************************************************")
   (println "*                                                                                     *")
   (println "* Knowledge Based Computer Aided design example for the Frame Language library clj-fl *")
@@ -33,8 +33,8 @@
 
 
 (defn showorgalfa
-  []
-  (load-kb-vec "resources\\kb-orgalfa.clj")
+  [f]
+  (load-kb-vec f)
   (println "***************************************************************************************")
   (println "*                                                                                     *")
   (println "* Knowledge Based ERP example for the Frame Language library clj-fl                   *")
@@ -45,5 +45,5 @@
   (println "* The knowledge Base contain the frame representation of the OrgAlfa organization     *")
   (println "*                                                                                     *")
   (println "* OrgAlfa is composed by :                                                            *")
-  (v/draw-tree (vector ((eval (fget-ii "OrgAlfa" :showcofs :proc)) "OrgAlfa")))
+  (v/draw-tree (vector (showcofs "OrgAlfa")))
   )
